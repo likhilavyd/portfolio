@@ -48,13 +48,14 @@ function Experience() {
           <div className="card">
             <h3>Societies</h3>
             <p>I played the following roles:</p>
-              <p>IEEE - IGDTUW</p>
+              <h6 className="societies">IEEE - IGDTUW</h6>
               <ul className="card-list">
                 <li>Event Management Associate (2025-26)</li>
                 <li>Technical Associate (2025-26)</li>
                 <li>Event Management Junior Executive Coordinator (2024-25)</li>
               </ul>
-              <p>Technoliterati - IGDTUW</p>
+              <br></br>
+              <h6 className="societies">Technoliterati - IGDTUW</h6>
               <ul className="card-list">
                 <li>Technoliterati Public Relations Coordinator (2024-25)</li>
               </ul>

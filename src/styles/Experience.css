@@ -65,13 +65,21 @@
 
 .card p {
     font-family: "Playpen Sans", cursive;
-    color: #555;
+    color: #7A4CAD;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.card h6{
+    font-family: "Playpen Sans", cursive;
+    color: #592E83;
     font-size: 1.2rem;
     margin-bottom: 25px;
     line-height: 1.6;
     text-align: center;
 }
-
 .card-list {
     list-style: none;
     padding: 0;
@@ -81,12 +89,14 @@
 
 .card-list li {
     font-family: "Playpen Sans", cursive;
-    color: #333;
+    color: #592E83;
     padding: 15px 0;
     border-bottom: 1px solid #eee;
     font-size: 1.05rem;
     line-height: 1.5;
     transition: background-color 0.2s ease;
+    text-align: left;
+    font-weight: 600;
 }
 
 .card-list li:hover {
@@ -120,7 +130,7 @@
 
 /* Certification Button Styles */
 .cert-link {
-    background: linear-gradient(135deg, #9A5BEC, #8E48EA);
+    background: linear-gradient(135deg, #a561ff, #8E48EA);
     color: white;
     border: none;
     padding: 6px 12px;
