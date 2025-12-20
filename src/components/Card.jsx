@@ -2,8 +2,10 @@ import "../styles/Card.css";
 function Card({ title, description, icon, demoLink, codeLink, techStack }) {
   return (
     <div className="project-card">
-      <div className="project-icon">{icon}</div>
-      <h3 className="project-name">{title}</h3>
+      <div className="project-header">
+        <div className="project-icon">{icon}</div>
+        <h3 className="project-name">{title}</h3>
+      </div>
       <p className="project-description">{description}</p>
       
       {techStack && (
