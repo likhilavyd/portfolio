@@ -16,7 +16,7 @@
     color: #592E83;
 }
 .content-about {
-    margin-top: 50px;
+    margin-top: 90px;
     color: #592E83;
     font-family: "Playpen Sans", cursive;
     font-size: larger;
@@ -31,11 +31,12 @@
     font-family: "Playpen Sans", cursive;
 }
 img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
     box-shadow: 0 0 100px rgb(89, 0, 145);
     object-fit: cover;
+    margin-top: -40px;
 }
 .content {
     font-family: "Playpen Sans", cursive;
