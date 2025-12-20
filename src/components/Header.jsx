@@ -12,6 +12,16 @@ function Header() {
     setIsMenuOpen(false);
   };
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const el = document.getElementById(targetId);
+    if (el) {
+      // Use native smooth scroll which respects CSS scroll-margin-top
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    closeMenu();
+  };
+
   return (
     <header className="header py-3 sticky-top z-3">
       <nav className="container d-flex justify-content-between align-items-center">
@@ -33,25 +43,25 @@ function Header() {
         {/* Navigation menu */}
         <ul className={`nav gap-3 ${isMenuOpen ? 'nav-mobile-open' : ''}`}>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#about" onClick={closeMenu}>About</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'about')}>About</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#overview" onClick={closeMenu}>Overview</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'overview')}>Overview</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#resume" onClick={closeMenu}>Resume</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'resume')}>Resume</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#skills" onClick={closeMenu}>Skills</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'skills')}>Skills</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#projects" onClick={closeMenu}>Projects</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#experience" onClick={closeMenu}>Experience</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'experience')}>Experience</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium" href="#contact" onClick={closeMenu}>Contact</a>
+            <a className="nav-link fw-medium" href="#" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
           </li>
         </ul>
       </nav>
