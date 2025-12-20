@@ -1,0 +1,105 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    background-image: linear-gradient( #D2B6F6, #C7A4F4);
+
+}
+.about, .image{
+    padding: 50px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.title-about {
+    font-family: "Playwrite AU QLD", cursive;
+    color: #592E83;
+}
+.content-about {
+    margin-top: 50px;
+    color: #592E83;
+    font-family: "Playpen Sans", cursive;
+    font-size: larger;
+}
+.image {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playpen Sans", cursive;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgb(89, 0, 145);
+}
+.content {
+    font-family: "Playpen Sans", cursive;
+    color: #592E83;
+    font-size: larger;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.highlighted-name {
+    background: linear-gradient(#8336E7);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 3s ease-in-out infinite;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Typing animation container */
+.typing-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.typing-text {
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #8336E7;
+    display: inline-block;
+    min-height: 1.5em;
+}
+
+/* Blinking cursor */
+.cursor {
+    color: #9A5BEC;
+    animation: blink 1s infinite;
+    font-weight: normal;
+}
+
+/* Description styling */
+.description {
+    margin-top: 20px;
+}
+
+/* Keyframe animations */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}

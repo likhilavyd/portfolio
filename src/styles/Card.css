@@ -1,0 +1,159 @@
+.project-card {
+    font-family: "Playpen Sans", cursive;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    background-color: rgba(74, 36, 113, 0.3);
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+    background-color: rgba(74, 36, 113, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.project-name {
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+    align-self: center;
+    font-weight: 600;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.project-description {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    line-height: 1.3;
+    margin: 0;
+    overflow: visible;
+    flex-grow: 1;
+}
+
+.project-tech-stack {
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tech-stack-title {
+    font-size: 0.8rem;
+    color: #E6E6FA;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.tech-badge {
+    background: linear-gradient(135deg, #9A5BEC, #8E48EA);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-card:hover .tech-badge {
+    background: linear-gradient(135deg, #8E48EA, #8336E7);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-links {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.project-link {
+    font-size: 0.75rem;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 2px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.demo-link {
+    background: linear-gradient(135deg, #7824E5, #6B1FA8);
+}
+
+.demo-link:hover {
+    background: linear-gradient(135deg, #8336E7, #7824E5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(120, 36, 229, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+.code-link {
+    background: linear-gradient(135deg, #7824E5, #6B1FA8);
+}
+
+.code-link:hover {
+    background: linear-gradient(135deg, #8336E7, #7824E5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(120, 36, 229, 0.4);
+    text-decoration: none;
+    color: white;
+}

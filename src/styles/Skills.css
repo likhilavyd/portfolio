@@ -1,0 +1,77 @@
+.skills {
+    background-image: linear-gradient(#A56DEE, #9A5BEC);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    font-family: "Playwrite AU QLD", cursive;
+    color: #592E83;
+    font-size: 2rem;
+}
+
+.skills-description {
+    margin-top: 50px;
+    color: #592E83;
+    font-family: "Playpen Sans", cursive;
+    font-size: larger;
+    scroll-margin-top: 100px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    font-family: "Playpen Sans", cursive;
+    font-size: larger;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    background-color: transparent;
+    width: 140px;
+    height: 120px;
+    min-width: 140px;
+    min-height: 120px;
+    max-width: 140px;
+    max-height: 120px;
+}
+
+.skill-item:hover {
+    background-color: #4a2471;
+    transform: translateY(-2px);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    transition: color 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+    filter: brightness(1.2);
+}
+
+.skill-label {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center;
+}

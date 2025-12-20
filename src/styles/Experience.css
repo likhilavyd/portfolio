@@ -1,0 +1,179 @@
+.section {
+    background-image: linear-gradient(#8E48EA, #8336E7);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-title {
+    font-family: "Playwrite AU QLD", cursive;
+    color: #592E83;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.experience-description {
+    color: #592E83;
+    font-family: "Playpen Sans", cursive;
+    font-size: larger;
+    scroll-margin-top: 100px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.scroll-section {
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 30px;
+}
+
+.scroll-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 35px;
+    width: 100%;
+    min-height: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid rgba(89, 46, 131, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-family: "Playwrite AU QLD", cursive;
+    color: #592E83;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card p {
+    font-family: "Playpen Sans", cursive;
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card-list li {
+    font-family: "Playpen Sans", cursive;
+    color: #333;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    transition: background-color 0.2s ease;
+}
+
+.card-list li:hover {
+    background-color: rgba(89, 46, 131, 0.05);
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-list li:last-child {
+    border-bottom: none;
+}
+
+.card-list a {
+    color: #592E83;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 2px 0;
+}
+
+.card-list a:hover {
+    color: #7A4CAD;
+    text-decoration: underline;
+    background-color: rgba(122, 76, 173, 0.1);
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: -4px -12px;
+}
+
+/* Certification Button Styles */
+.cert-link {
+    background: linear-gradient(135deg, #9A5BEC, #8E48EA);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cert-link:hover {
+    background: linear-gradient(135deg, #B366F0, #9A5BEC);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 12px rgba(154, 91, 236, 0.4);
+}
+
+@media (max-width: 1200px) {
+    .scroll-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px 10px;
+    }
+    
+    .card {
+        padding: 25px;
+        min-height: 300px;
+    }
+    
+    .card h3 {
+        font-size: 1.6rem;
+    }
+    
+    .card p {
+        font-size: 1.1rem;
+    }
+    
+    .card-list li {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+}

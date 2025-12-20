@@ -1,0 +1,283 @@
+.contact-section {
+    background: linear-gradient(135deg, #8336E7, #7824E5);
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: "Playwrite AU QLD", cursive;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-subtitle {
+    font-family: "Playpen Sans", cursive;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Contact Form Styles */
+.contact-form-wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-title {
+    font-family: "Playwrite AU QLD", cursive;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input, .form-textarea {
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: "Playpen Sans", cursive;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #9A5BEC, #8E48EA);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(154, 91, 236, 0.3);
+}
+
+.form-submit:hover {
+    background: linear-gradient(135deg, #8E48EA, #8336E7);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(154, 91, 236, 0.4);
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 15px;
+    color: #10B981;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 600;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-title {
+    font-family: "Playwrite AU QLD", cursive;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-method:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.method-icon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.method-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.method-label {
+    font-family: "Playpen Sans", cursive;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.method-link, .method-text {
+    font-family: "Playpen Sans", cursive;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.method-link:hover {
+    color: #10B981;
+    text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 20px;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-form-wrapper, .contact-info {
+        padding: 30px 20px;
+    }
+    
+    .contact-title {
+        font-size: 2rem;
+    }
+    
+    .form-title, .info-title {
+        font-size: 1.5rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+    
+    .method-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+.contact-link {
+    color: #6B46C1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #8B5CF6;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 50px 20px;
+    }
+    
+    .contact-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-content {
+        gap: 20px;
+    }
+    
+    .contact-item {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-item {
+        font-size: 1rem;
+        padding: 12px 15px;
+        text-align: left;
+    }
+    
+    .contact-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
