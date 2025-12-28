@@ -12,7 +12,7 @@ function Resume() {
       
       <div className="resume-actions">
         <a 
-          href="./public/LikhilaVydanaResume.pdf" 
+          href="/LikhilaVydanaResume.pdf" 
           className="btn-resume btn-primary" 
           download
           aria-label="Download resume as PDF"
@@ -20,7 +20,7 @@ function Resume() {
           📄 Download Resume
         </a>
         <a 
-          href="./public/LikhilaVydanaResume.pdf" 
+          href="/LikhilaVydanaResume.pdf" 
           className="btn-resume btn-secondary" 
           target="_blank" 
           rel="noopener noreferrer"
