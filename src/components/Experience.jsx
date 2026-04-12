@@ -9,6 +9,7 @@ import gdscCert from "../assets/certifications/GDSC CoA.png";
 import agentAICert from "../assets/certifications/Agent AI.png";
 import leanInCert from "../assets/certifications/Lean In CoR.png";
 import gdgcCert from "../assets/certifications/GDGC CoA.png";
+import amHacksCert from "../assets/certifications/AMHacks CoP.png";
 
 function Experience() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -22,7 +23,8 @@ function Experience() {
     gdsc: { title: "GDSC - Gen AI 2024", image: gdscCert },
     agentai: { title: "Agent AI", image: agentAICert },
     leanin: { title: "Lean In - Basic Coding & DSA (C++)", image: leanInCert },
-    gdgc: { title: "Google Developer Groups on Campus - Web Development", image: gdgcCert }
+    gdgc: { title: "Google Developer Groups on Campus - Web Development", image: gdgcCert },
+    amhacks: { title: "AM Hacks Hackathon", image: amHacksCert }
   };
 
   const openModal = (certKey) => {
@@ -104,10 +106,21 @@ function Experience() {
                   href="#" 
                   onClick={(e) => {
                     e.preventDefault();
-                    openModal('rablo  ');
+                    openModal('rablo');
                   }}
                 >
                   24-Hour UI/UX Design Hackathon - Rablo.In
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openModal('amhacks');
+                  }}
+                >
+                  AM Hacks Hackathon
                 </a>
               </li>
             </ul>

@@ -1,5 +1,7 @@
 import "../styles/Resume.css";
 function Resume() {
+  const resumeUrl = `${import.meta.env.BASE_URL}LikhilaVydanaResume.pdf`;
+
   return (
     <div className="resume">
       <h2 className="title-resume">Resume</h2>
@@ -12,7 +14,7 @@ function Resume() {
       
       <div className="resume-actions">
         <a 
-          href="/LikhilaVydanaResume.pdf" 
+          href={resumeUrl}
           className="btn-resume btn-primary" 
           download
           aria-label="Download resume as PDF"
@@ -20,7 +22,7 @@ function Resume() {
           📄 Download Resume
         </a>
         <a 
-          href="/LikhilaVydanaResume.pdf" 
+          href={resumeUrl}
           className="btn-resume btn-secondary" 
           target="_blank" 
           rel="noopener noreferrer"

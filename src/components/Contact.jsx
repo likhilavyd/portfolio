@@ -45,7 +45,7 @@ function Contact() {
       }
     } catch (error) {
       // Fallback to mailto if form service fails
-      const mailtoLink = `mailto:likhilavyd.work@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      const mailtoLink = `<mailto:likhila className="vydana"></mailto:likhila>@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       )}`;
       
@@ -134,8 +134,8 @@ function Contact() {
               <div className="method-icon">📧</div>
               <div className="method-content">
                 <span className="method-label">Email</span>
-                <a href="mailto:likhilavyd.work@gmail.com" className="method-link">
-                  likhilavyd.work@gmail.com
+                <a href="mailto:likhila.vydana@gmail.com" className="method-link">
+                  likhila.vydana@gmail.com
                 </a>
               </div>
             </div>
@@ -156,16 +156,6 @@ function Contact() {
                 <span className="method-label">GitHub</span>
                 <a href="https://github.com/likhilavyd" target="_blank" rel="noopener noreferrer" className="method-link">
                   github.com/likhilavyd
-                </a>
-              </div>
-            </div>
-            
-            <div className="contact-method">
-              <div className="method-icon">💻</div>
-              <div className="method-content">
-                <span className="method-label">LeetCode</span>
-                <a href="https://leetcode.com/u/likhila19/" target="_blank" rel="noopener noreferrer" className="method-link">
-                  leetcode.com/u/likhila19
                 </a>
               </div>
             </div>

@@ -13,8 +13,16 @@ function Projects() {
           description="A comprehensive web-based personal health record and appointment management portal. Features secure user authentication, digital medical records storage, appointment booking system, and automated health reminders."
           icon={<img src={myhealthmateIcon} alt="MyHealthMate Icon" />}
           techStack={["HTML5", "CSS3", "Bootstrap", "JavaScript", "Firebase", "Responsive Design"]}
-          demoLink="https://likhilavyd.github.io/HackOrbit_HackIt/"
-          codeLink="https://github.com/likhilavyd/HackOrbit_HackIt"
+          demoLink="https://likhilavyd.github.io/MyHealthMate/"
+          codeLink="https://github.com/likhilavyd/MyHealthMate"
+        />
+        <Card
+          title="ABC"
+          description=".."
+          // icon={<img src={myhealthmateIcon} alt="MyHealthMate Icon" />}
+          techStack={["HTML5", "CSS3", "Bootstrap", "JavaScript", "Firebase", "Responsive Design"]}
+          demoLink="https://likhilavyd.github.io/MyHealthMate/"
+          codeLink="https://github.com/likhilavyd/MyHealthMate"
         />
       </div>
     </section>
